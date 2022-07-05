@@ -40,7 +40,7 @@ const Form = () => {
         {inputArray.map((item) => (
           <Input
             value={payload[item.name]}
-            isValid={item.validator(payload[item.name])}
+            // isValid={item.validator(payload[item.name])}
             handleChange={handleChange}
             {...item}
           />
