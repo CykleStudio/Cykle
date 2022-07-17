@@ -4,32 +4,32 @@ const Input = ({
   _id,
   label,
   name,
-  type,
-  placeholder,
   handleChange,
   props,
-  isValid,
   value,
   errorMessage,
+  ...InputProps
 }) => {
-  const [active, setActive] = useState(false);
+  const [error, setError] = useState(false);
+
+const handleBlur = (e) => {
+  setError(true);
+}
 
   return (
     <>
       <label htmlFor={_id} className={classes.label}>
         {label}
         <input
-          className={!isValid && active ? classes.error : ""}
           id={_id}
-          type={type}
-          placeholder={placeholder}
           name={name}
-          onFocus={() => setActive(true)}
           onChange={handleChange}
           value={value}
-          {...props}
+          {...InputProps}
+          onBlur={handleBlur}
+          error={error.toString()}
         />
-        {!isValid && active && <span>{errorMessage}</span>}
+        <span>{errorMessage}</span>
       </label>
     </>
   );

@@ -39,7 +39,7 @@ const Submitted = () => {
 
     <div className={classes.main}>
       <Logo />
-      <h2 class=" animate__animated animate__zoomIn animate__fast 0.1s">
+      <h2 className=" animate__animated animate__zoomIn animate__fast 0.1s">
         We are super excited to have you, You will hear from us shortly 💌
       </h2>
       <div className={classes.icons}>

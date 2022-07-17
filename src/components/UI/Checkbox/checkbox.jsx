@@ -1,6 +1,6 @@
 import classes from "./checkbox.module.css";
 
-const Checkbox = ({ text, _id, name, setPayload }) => {
+const Checkbox = ({ text, _id, name, handleCheckbox }) => {
   return (
     <>
       <label htmlFor={_id} className={classes.container}>
@@ -9,12 +9,8 @@ const Checkbox = ({ text, _id, name, setPayload }) => {
           type="checkbox"
           defaultChecked={false}
           name={name}
-          onChange={(e) =>
-            setPayload((prevState) => ({
-              ...prevState,
-              [e.target.name]: e.target.checked,
-            }))
-          }
+          onChange={(e) => handleCheckbox(e)}
+          value={text}
         />
         <span className={classes.checkmark}></span>
         {text}

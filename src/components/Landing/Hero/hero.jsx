@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <div className={classes.main}>
       <div className={classes.heroContent}>
-        <h2 class=" animate__animated animate__zoomIn animate__fast 0.1s">
+        <h2 className=" animate__animated animate__zoomIn animate__fast 0.1s">
           Creating digital Products and experiences from{" "}
           <LineText text="conception" /> to <LineText text="completion" />
         </h2>

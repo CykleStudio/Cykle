@@ -15,10 +15,10 @@
   font-family: "Dm sans";
   font-weight: 400;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
 }
-.main:hover{
-  transform: translateY(-10px)!important;
+.main:hover {
+  transform: translateY(-10px) !important;
 }
 @media screen and (max-width: 425px) {
   .main {
@@ -29,3 +29,4 @@
     width: 400px;
   }
 }
+

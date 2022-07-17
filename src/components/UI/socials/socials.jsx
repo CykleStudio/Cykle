@@ -22,24 +22,24 @@ const Project = () => {
       <div>
         <h2>Take a look at Our recent projects Here</h2>
         <div className={classes.projectSite}>
-          <Link to="/" data-aos="fade-right">
+          <a href="/" data-aos="fade-right">
             <img
               src={Behance}
               alt="behance"
               data-aos="fade-right"
               data-aos-duration="2000"
             />
-          </Link>
-          <Link to="/" data-aos="fade-down">
+          </a>
+          <a href="https://dribbble.com/Cykle" data-aos="fade-down">
             <img
               src={Dribble}
               alt="dribble"
               data-aos="fade-down"
               data-aos-duration="2000"
             />
-          </Link>
-          <Link
-            to="/https://instagram.com/cykleproducts?igshid=YmMyMTA2M2Y="
+          </a>
+          <a
+            href="https://instagram.com/cykleproducts?igshid=YmMyMTA2M2Y="
             data-aos="zoom-in"
           >
             <img
@@ -48,9 +48,9 @@ const Project = () => {
               data-aos="zoom-in"
               data-aos-duration="2000"
             />
-          </Link>
-          <Link
-            to="/https://twitter.com/cykleproducts?s=21&t=ZuSHeowKJNl6ZN4-dWeAQA"
+          </a>
+          <a
+            href="https://twitter.com/cykleproducts?s=21&t=ZuSHeowKJNl6ZN4-dWeAQA"
             data-aos="zoom-out"
           >
             <img
@@ -59,23 +59,23 @@ const Project = () => {
               data-aos="zoom-out"
               data-aos-duration="2000"
             />
-          </Link>
-          <Link to="/" data-aos="fade-up">
+          </a>
+          <a href="/" data-aos="fade-up">
             <img
               src={LinkedIn}
               alt="linkedin"
               data-aos="fade-up"
               data-aos-duration="2000"
             />
-          </Link>
-          <Link to="/https://www.facebook.com/cykleproducts/" data-aos="fade-left">
+          </a>
+          <a href="https://www.facebook.com/cykleproducts/" data-aos="fade-left">
             <img
               src={facebook}
-              alt="linkedin"
+              alt="facebook"
               data-aos="fade-left"
               data-aos-duration="2000"
             />
-          </Link>
+          </a>
         </div>
       </div>
       <Link to="/contact-us" className={classes.btn} type="projects">

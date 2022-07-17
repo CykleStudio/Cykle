@@ -79,6 +79,9 @@
   font-family: "Dm sans";
   resize: none;
 }
+.form textarea:invalid[error="true"] {
+  border: 1px solid red;
+}
 .form button {
   border: 1px solid #000;
   padding: 1.5rem;
@@ -91,8 +94,15 @@
   margin: 60px auto 0 auto;
   display: block;
   background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px 16px 0px 0px;
   width: 50%;
+}
+.form button:disabled {
+  background: rgba(6, 6, 6, 0.809);
+  cursor: not-allowed;
 }
 .checkBoxOne label {
   margin-bottom: 8px;
@@ -165,4 +175,8 @@
   .form textarea {
     padding-bottom: 8rem;
   }
+  /* .form button:disabled {
+    background: rgba(6, 6, 6, 0.809);
+    cursor: not-allowed;
+  } */
 }
