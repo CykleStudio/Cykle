@@ -1,2 +1,2 @@
-# [Cykle Website](https://https://cykle.studio/).
+# [Cykle Website](https://cykle.studio/).
 
